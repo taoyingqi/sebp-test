@@ -1,0 +1,23 @@
+
+#######################
+#### http server   ####
+#######################
+server:
+  session.timeout: 3600000
+  ip: localhost
+  port: 10003
+
+#######################
+#### LOG           ####
+#######################
+logging:
+  config: classpath:log4j2-test.yml
+  level:
+    com.youzidata: DEBUG
+
+elastic_local: native://10.0.108.49:9300
+elastic_cluster: es
+service: ${spring.application.name}
+
+
+
